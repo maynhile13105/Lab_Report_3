@@ -1,2 +1,3 @@
 # LAB REPORTS
 WELCOME TO MY LAB REPORT 3!
+[Lab Report 3]
