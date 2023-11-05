@@ -17,7 +17,7 @@
 
   ```
   @Test 
-	public void testReverseInPlace() {
+	public void testReverseInPlace1() {
     int[] input1 = { 5 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 5 }, input1);
@@ -26,16 +26,10 @@
 
 - ***The symptom, as the output of running the tests***
 
-  - The output of running the first test:
-
+ 
 ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/ef2e25bc-18a3-4925-9dc0-c04406d525e3)
 
  
-  - The output of running the second test:
-
-![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/b1b01448-d119-4f31-81a3-ac6d42341206)
-    
-
 - ***The bug, as the before-and-after code change required to fix it***
     - The bug before fixing:
       ```
