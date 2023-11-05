@@ -71,21 +71,24 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
 
   The `-v` option allows `grep` to search and return the files/lines that do not contain the matching string.
 
-  The image below shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed. 
+  The image below shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
+  
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/c0a85d55-cda7-4bbe-b1eb-e76b07006d89)
 
 - `grep` with `-n` option
 
   The `-n` option allows `grep` to search and return the lines containing the matching string with its line number in the file.
 
-  The image below is the result of the command `grep -n "government" find-results.txt`. 
+  The image below is the result of the command `grep -n "government" find-results.txt`.
+  
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/e28d25ad-5478-4b65-9b1d-2ca581fd03e6)
 
 - `grep` with `-c` option
 
   The `-c` option allows grep to search, count the lines containing the matching string, and then return the number of counts.
   
-  Like in the file `find-results.txt`, we have 292 lines containing the phrase "government". So when the command `grep -c "government" find-results.txt" was executed, `292` was printed out as the result of the command. 
+  Like in the file `find-results.txt`, we have 292 lines containing the phrase "government". So when the command `grep -c "government" find-results.txt" was executed, `292` was printed out as the result of the command.
+  
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/724c7430-7b39-450f-8eff-fd359c85e5b8)
   
 
