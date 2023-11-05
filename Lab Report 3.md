@@ -59,15 +59,24 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
 #### [Command `grep`](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
 
 - `grep` with `-i` option
-  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/93d1bc53-1a9e-401f-b5b1-d85c92544ff0)
-  The `-i` option allows `grep` to search and return results ignoring the cases of matching strings.
-  In the example below, if we execute the command `grep "PLOS" find-results.txt`, the result will be nothing because in the file `find-results.txt` there is no line containing the exact phrase "PLOS". But if we execute the command `grep -i "PLOS" find-results.txt`, the output contains all the lines containing "plos" / "Plos" / "PLos"/...
 
+  The `-i` option allows `grep` to search and return results ignoring the cases of matching strings.
+
+   In the example below, if we execute the command `grep "PLOS" find-results.txt`, the result will be nothing because in the file `find-results.txt` there is no line containing the exact phrase "PLOS". But if we execute the command `grep -i "PLOS" find-results.txt`, the output contains all the lines containing "plos" / "Plos" / "PLos"/...
+
+  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/93d1bc53-1a9e-401f-b5b1-d85c92544ff0)
+  
   
 - `grep` with `-v` option
 
-  
+  The `-v` option allows `grep` to search and return the files/lines that do not contain the matching string.
+
+  The image below shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrased "biomed" were not printed. 
+  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/c0a85d55-cda7-4bbe-b1eb-e76b07006d89)
+
 - `grep` with `-r` option
+
+  
 - `grep` with `-w` option
 
 
