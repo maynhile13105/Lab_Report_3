@@ -70,11 +70,11 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
   
    1. `grep -i "PLOS" find-results.txt`
 
-![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/93d1bc53-1a9e-401f-b5b1-d85c92544ff0)
+![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/d5b71462-cd1a-4f1c-a11c-712c9f5e139f)
 
    2. `grep -i "pLoS" find-results.txt`
 
-![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/cb26ec00-5eb8-4987-8f14-0f16af6a8afb)
+![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/311ca02e-3e59-4275-bb88-ee3fe383c699)
 
   
 - **`grep` with `-v` option**
