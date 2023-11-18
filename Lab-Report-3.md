@@ -74,10 +74,19 @@ EX2: `grep -i "pLoS" find-results.txt`
 
   The `-v` option allows `grep` to search and return the files/lines that do not contain the matching string.
 
-  The image below shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
-  
-  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/c0a85d55-cda7-4bbe-b1eb-e76b07006d89)
 
+EX1: `grep -v "biomed" find-results.txt > grep-v-results.txt`
+
+  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/c0a85d55-cda7-4bbe-b1eb-e76b07006d89)
+  
+  The image shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
+
+EX2: `grep -v "plos" find-results.txt > grep-v-results.txt`
+
+![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/cf72ef4d-c52d-48a7-be9a-49bc9dd7cb68)
+
+The image shows us the result of the command `grep -v "plos" find-results.txt` in a file grep-v-results.txt. We can figure out that all lines containing the phrase "plos" were not printed.
+  
 - `grep` with `-n` option
 
   The `-n` option allows `grep` to search and return the lines containing the matching string with its line number in the file.
