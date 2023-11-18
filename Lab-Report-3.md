@@ -63,11 +63,16 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
   The `-i` option allows `grep` to search and return results ignoring the cases of matching strings.
 
    In the example below, if we execute the command `grep "PLOS" find-results.txt`, the result will be nothing because in the file `find-results.txt` there is no line containing the exact phrase "PLOS". But if we execute the command `grep -i "PLOS" find-results.txt`, not onlt the lines containing the exact phrase "PLOS" but also all the lines containing "plos" / "Plos" / "PLos"/... were printed out.
-EX1: `grep -i "PLOS" find-results.txt`
+
+   For examples:
+  
+   1. `grep -i "PLOS" find-results.txt`
+      
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/93d1bc53-1a9e-401f-b5b1-d85c92544ff0)
 
-EX2: `grep -i "pLoS" find-results.txt`
-![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/cb26ec00-5eb8-4987-8f14-0f16af6a8afb)
+   2. `grep -i "pLoS" find-results.txt`
+ 
+   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/cb26ec00-5eb8-4987-8f14-0f16af6a8afb)
 
   
 - `grep` with `-v` option
@@ -75,13 +80,15 @@ EX2: `grep -i "pLoS" find-results.txt`
   The `-v` option allows `grep` to search and return the files/lines that do not contain the matching string.
 
 
-EX1: `grep -v "biomed" find-results.txt > grep-v-results.txt`
+For examples: 
+
+  1. `grep -v "biomed" find-results.txt > grep-v-results.txt`
 
  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/e7a95f73-10ee-4b10-9cdb-cdb4ec952795)
   
   The image shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
 
-EX2: `grep -v "report" find-results.txt > grep-v-results.txt`
+  2. `grep -v "report" find-results.txt > grep-v-results.txt`
 
 ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/d128d9ad-3cbf-4dcc-b2fc-a6a6acdd99a8)
 
@@ -91,23 +98,29 @@ The image shows us the result of the command `grep -v "report" find-results.txt`
 
   The `-n` option allows `grep` to search and return the lines containing the matching string with its line number in the file.
 
-  EX1: `grep -n "government" find-results.txt`.
+  For examples:
+  
+  1. `grep -n "government" find-results.txt`.
 
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/61c72442-1e0e-4970-911a-717b7f0875de)
 
-  EX2: `grep -n "chapter-1" find-results.txt`
+  2. `grep -n "chapter-1" find-results.txt`
 
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/897559cc-68aa-45bb-a1ca-d7894e802f1c)
 
 
 - `grep` with `-c` option
 
-  The `-c` option allows grep to search, count the lines containing the matching string, and then return the number of counts.
-  
-  Like in the file `find-results.txt`, we have 292 lines containing the phrase "government". So when the command `grep -c "government" find-results.txt" was executed, `292` was printed out as the result of the command.
-  
+  The `-c` option allows grep to search, count the lines containing the matching string, and then just return the number of counts.
+  For examples: 
+ 1. `grep -c "government" find-results.txt`
+
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/724c7430-7b39-450f-8eff-fd359c85e5b8)
   
+ 2. `grep -c "Gen_Account_Office" find-results.txt`
+ 
+  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/26d5a9ec-b913-4d38-a374-80e73daa2c16)
+
 
 
 
