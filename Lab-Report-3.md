@@ -62,18 +62,16 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
 
 #### Source: [Grep Command in Linux – Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
 
-  The `-i` option allows `grep` to search and return results ignoring the cases of matching strings.
+The `-i` option allows `grep` to search and return results ignoring the cases of matching strings.
 
-   In the example below, if we execute the command `grep "PLOS" find-results.txt`, the result will be nothing because in the file `find-results.txt` there is no line containing the exact phrase "PLOS". But if we execute the command `grep -i "PLOS" find-results.txt`, not onlt the lines containing the exact phrase "PLOS" but also all the lines containing "plos" / "Plos" / "PLos"/... were printed out.
+In the example below, if we execute the command `grep "PLOS" find-results.txt`, the result will be nothing because in the file `find-results.txt` there is no line containing the exact phrase "PLOS". But if we execute the command `grep -i "PLOS" find-results.txt`, not onlt the lines containing the exact phrase "PLOS" but also all the lines containing "plos" / "Plos" / "PLos"/... were printed out.
 
-   For examples:
-  
-   1. `grep -i "PLOS" find-results.txt`
+For examples:
+  1. `grep -i "PLOS" find-results.txt`
 
 ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/74e09274-2966-4b2e-bd14-cf16f1b2fd4e)
-
-
-   2. `grep -i "pLoS" find-results.txt`
+  
+  2. `grep -i "pLoS" find-results.txt`
 
 ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/311ca02e-3e59-4275-bb88-ee3fe383c699)
 
@@ -82,17 +80,17 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
 
 #### Source: [Grep Command in Linux – Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
 
-  The `-v` option allows `grep` to search and return the files/lines that do not contain the matching string.
+The `-v` option allows `grep` to search and return the files/lines that do not contain the matching string.
 
 For examples: 
 
-  1. `grep -v "biomed" find-results.txt > grep-v-results.txt`
+ 1. `grep -v "biomed" find-results.txt > grep-v-results.txt`
 
  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/e7a95f73-10ee-4b10-9cdb-cdb4ec952795)
  
  The image shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
-
-  2. `grep -v "report" find-results.txt > grep-v-results.txt`
+ 
+ 2. `grep -v "report" find-results.txt > grep-v-results.txt`
 
  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/d128d9ad-3cbf-4dcc-b2fc-a6a6acdd99a8)
  
