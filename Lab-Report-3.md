@@ -56,9 +56,11 @@
       The expected output of the given algorithm is that only the first half of the array changes its value to the second half of the array. The problem with this algorithm is that while we swap, we accidentally lose the original value of the first half of the array. So, we can see that we need to store the original value of the first half of the array before converting it to the second half of the array.
 Therefore, to fix this bug, I created a variable `temp` to temporarily store the original value of `arr[i]` before converting it to the value of `arr[arr.length - i - 1]`. After that, I changed the value of `arr[i]` to `arr[arr.length - i - 1]` and then I assign the value of `temp` to `arr[arr.length - i - 1]`. As a result, I swapped the values of `arr[i]` and `arr[arr.length - i - 1]` with each other. Also, in each iteration i, I swap the value of the front half of the array (`arr[i]`) and the second half of the array (`arr[arr.length - i-1`) at the same time. So my loop only needs to run from 0 to the end of the first half of the array (`array.length/2`)
 ### ***Part 2 - Researching Commands***
-#### Source: [Grep Command in Linux – Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
+
 
 - *`grep` with `-i` option*
+
+#### Source: [Grep Command in Linux – Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
 
   The `-i` option allows `grep` to search and return results ignoring the cases of matching strings.
 
@@ -76,6 +78,8 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
 
   
 - **`grep` with `-v` option**
+
+#### Source: [Grep Command in Linux – Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
 
   The `-v` option allows `grep` to search and return the files/lines that do not contain the matching string.
 
@@ -95,6 +99,8 @@ For examples:
   
 - **`grep` with `-n` option**
 
+  #### Source: [Grep Command in Linux – Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
+
   The `-n` option allows `grep` to search and return the lines containing the matching string with its line number in the file.
 
   For examples:
@@ -109,6 +115,8 @@ For examples:
 
 
 - **`grep` with `-c` option**
+
+  #### Source: [Grep Command in Linux – Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
 
   The `-c` option allows grep to search, count the lines containing the matching string, and then just return the number of counts.
   For examples:
