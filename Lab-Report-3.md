@@ -77,23 +77,28 @@ EX2: `grep -i "pLoS" find-results.txt`
 
 EX1: `grep -v "biomed" find-results.txt > grep-v-results.txt`
 
-  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/c0a85d55-cda7-4bbe-b1eb-e76b07006d89)
+ ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/e7a95f73-10ee-4b10-9cdb-cdb4ec952795)
   
   The image shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
 
-EX2: `grep -v "plos" find-results.txt > grep-v-results.txt`
+EX2: `grep -v "report" find-results.txt > grep-v-results.txt`
 
-![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/cf72ef4d-c52d-48a7-be9a-49bc9dd7cb68)
+![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/d128d9ad-3cbf-4dcc-b2fc-a6a6acdd99a8)
 
-The image shows us the result of the command `grep -v "plos" find-results.txt` in a file grep-v-results.txt. We can figure out that all lines containing the phrase "plos" were not printed.
+The image shows us the result of the command `grep -v "report" find-results.txt` in a file grep-v-results.txt. We can figure out that all lines containing the phrase "report" were not printed.
   
 - `grep` with `-n` option
 
   The `-n` option allows `grep` to search and return the lines containing the matching string with its line number in the file.
 
-  The image below is the result of the command `grep -n "government" find-results.txt`.
-  
-  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/e28d25ad-5478-4b65-9b1d-2ca581fd03e6)
+  EX1: `grep -n "government" find-results.txt`.
+
+  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/61c72442-1e0e-4970-911a-717b7f0875de)
+
+  EX2: `grep -n "chapter-1" find-results.txt`
+
+  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/897559cc-68aa-45bb-a1ca-d7894e802f1c)
+
 
 - `grep` with `-c` option
 
