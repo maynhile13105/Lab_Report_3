@@ -65,7 +65,10 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
    In the example below, if we execute the command `grep "PLOS" find-results.txt`, the result will be nothing because in the file `find-results.txt` there is no line containing the exact phrase "PLOS". But if we execute the command `grep -i "PLOS" find-results.txt`, not onlt the lines containing the exact phrase "PLOS" but also all the lines containing "plos" / "Plos" / "PLos"/... were printed out.
 EX1: `grep -i "PLOS" find-results.txt`
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/93d1bc53-1a9e-401f-b5b1-d85c92544ff0)
-  
+
+EX2: `grep -i "pLoS" find-results.txt`
+![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/cb26ec00-5eb8-4987-8f14-0f16af6a8afb)
+
   
 - `grep` with `-v` option
 
