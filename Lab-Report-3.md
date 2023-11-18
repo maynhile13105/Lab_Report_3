@@ -67,11 +67,11 @@ The `-i` option allows `grep` to search and return results ignoring the cases of
 In the example below, if we execute the command `grep "PLOS" find-results.txt`, the result will be nothing because in the file `find-results.txt` there is no line containing the exact phrase "PLOS". But if we execute the command `grep -i "PLOS" find-results.txt`, not onlt the lines containing the exact phrase "PLOS" but also all the lines containing "plos" / "Plos" / "PLos"/... were printed out.
 
 For examples:
-  1. `grep -i "PLOS" find-results.txt`
+	- `grep -i "PLOS" find-results.txt`
 
 ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/74e09274-2966-4b2e-bd14-cf16f1b2fd4e)
   
-  2. `grep -i "pLoS" find-results.txt`
+	- `grep -i "pLoS" find-results.txt`
 
 ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/311ca02e-3e59-4275-bb88-ee3fe383c699)
 
@@ -84,13 +84,13 @@ The `-v` option allows `grep` to search and return the files/lines that do not c
 
 For examples: 
 
- 1. `grep -v "biomed" find-results.txt > grep-v-results.txt`
+	- `grep -v "biomed" find-results.txt > grep-v-results.txt`
 
  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/e7a95f73-10ee-4b10-9cdb-cdb4ec952795)
  
  The image shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
  
- 2. `grep -v "report" find-results.txt > grep-v-results.txt`
+	- `grep -v "report" find-results.txt > grep-v-results.txt`
 
  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/d128d9ad-3cbf-4dcc-b2fc-a6a6acdd99a8)
  
@@ -104,11 +104,11 @@ For examples:
 
   For examples:
   
-  1. `grep -n "government" find-results.txt`.
+  	- `grep -n "government" find-results.txt`.
 
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/61c72442-1e0e-4970-911a-717b7f0875de)
 
-  2. `grep -n "chapter-1" find-results.txt`
+  	- `grep -n "chapter-1" find-results.txt`
 
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/897559cc-68aa-45bb-a1ca-d7894e802f1c)
 
@@ -120,11 +120,11 @@ For examples:
   The `-c` option allows grep to search, count the lines containing the matching string, and then just return the number of counts.
   For examples:
 
-  1. `grep -c "government" find-results.txt`
+  	- `grep -c "government" find-results.txt`
 
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/724c7430-7b39-450f-8eff-fd359c85e5b8)
 
-  2. `grep -c "Gen_Account_Office" find-results.txt`
+  	- `grep -c "Gen_Account_Office" find-results.txt`
  
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/26d5a9ec-b913-4d38-a374-80e73daa2c16)
 
