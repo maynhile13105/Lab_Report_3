@@ -67,7 +67,8 @@ The `-i` option allows `grep` to search and return results ignoring the cases of
 In the example below, if we execute the command `grep "PLOS" find-results.txt`, the result will be nothing because in the file `find-results.txt` there is no line containing the exact phrase "PLOS". But if we execute the command `grep -i "PLOS" find-results.txt`, not onlt the lines containing the exact phrase "PLOS" but also all the lines containing "plos" / "Plos" / "PLos"/... were printed out.
 
 For examples:
-	- `grep -i "PLOS" find-results.txt`
+	
+ 	- `grep -i "PLOS" find-results.txt`
 
 ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/74e09274-2966-4b2e-bd14-cf16f1b2fd4e)
   
