@@ -58,7 +58,7 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
 ### ***Part 2 - Researching Commands***
 
 
-- *`grep` with `-i` option*
+- **`grep` with `-i` option**
 
 #### Source: [Grep Command in Linux – Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
 
@@ -68,15 +68,14 @@ In the example below, if we execute the command `grep "PLOS" find-results.txt`, 
 
 For examples:
 	
-	`grep -i "PLOS" find-results.txt`
+`grep -i "PLOS" find-results.txt`
 
 ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/74e09274-2966-4b2e-bd14-cf16f1b2fd4e)
   
-	`grep -i "pLoS" find-results.txt`
+`grep -i "pLoS" find-results.txt`
 
 ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/311ca02e-3e59-4275-bb88-ee3fe383c699)
 
-  
 - **`grep` with `-v` option**
 
 #### Source: [Grep Command in Linux – Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
@@ -85,13 +84,13 @@ The `-v` option allows `grep` to search and return the files/lines that do not c
 
 For examples: 
 
-	`grep -v "biomed" find-results.txt > grep-v-results.txt`
+`grep -v "biomed" find-results.txt > grep-v-results.txt`
 
  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/e7a95f73-10ee-4b10-9cdb-cdb4ec952795)
  
  The image shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
  
-	`grep -v "report" find-results.txt > grep-v-results.txt`
+`grep -v "report" find-results.txt > grep-v-results.txt`
 
  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/d128d9ad-3cbf-4dcc-b2fc-a6a6acdd99a8)
  
@@ -105,11 +104,11 @@ For examples:
 
   For examples:
   
-  	`grep -n "government" find-results.txt`.
+  `grep -n "government" find-results.txt`.
 
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/61c72442-1e0e-4970-911a-717b7f0875de)
 
-  	`grep -n "chapter-1" find-results.txt`
+  `grep -n "chapter-1" find-results.txt`
 
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/897559cc-68aa-45bb-a1ca-d7894e802f1c)
 
@@ -121,11 +120,11 @@ For examples:
   The `-c` option allows grep to search, count the lines containing the matching string, and then just return the number of counts.
   For examples:
 
-  	`grep -c "government" find-results.txt`
+  `grep -c "government" find-results.txt`
 
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/724c7430-7b39-450f-8eff-fd359c85e5b8)
 
-  	`grep -c "Gen_Account_Office" find-results.txt`
+  `grep -c "Gen_Account_Office" find-results.txt`
  
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/26d5a9ec-b913-4d38-a374-80e73daa2c16)
 
