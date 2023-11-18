@@ -67,12 +67,12 @@ Therefore, to fix this bug, I created a variable `temp` to temporarily store the
    For examples:
   
    1. `grep -i "PLOS" find-results.txt`
-      
-  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/93d1bc53-1a9e-401f-b5b1-d85c92544ff0)
+
+![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/93d1bc53-1a9e-401f-b5b1-d85c92544ff0)
 
    2. `grep -i "pLoS" find-results.txt`
- 
-   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/cb26ec00-5eb8-4987-8f14-0f16af6a8afb)
+
+![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/cb26ec00-5eb8-4987-8f14-0f16af6a8afb)
 
   
 - **`grep` with `-v` option**
@@ -84,14 +84,14 @@ For examples:
   1. `grep -v "biomed" find-results.txt > grep-v-results.txt`
 
  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/e7a95f73-10ee-4b10-9cdb-cdb4ec952795)
-  
-   The image shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
+ 
+ The image shows us the result of the command `grep -v "biomed" find-results.txt`. We can figure out that all lines containing the phrase "biomed" were not printed.
 
   2. `grep -v "report" find-results.txt > grep-v-results.txt`
 
  ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/d128d9ad-3cbf-4dcc-b2fc-a6a6acdd99a8)
-
-    The image shows us the result of the command `grep -v "report" find-results.txt` in a file grep-v-results.txt. We can figure out that all lines containing the phrase "report" were not printed.
+ 
+ The image shows us the result of the command `grep -v "report" find-results.txt` in a file grep-v-results.txt. We can figure out that all lines containing the phrase "report" were not printed.
   
 - **`grep` with `-n` option**
 
@@ -111,12 +111,13 @@ For examples:
 - **`grep` with `-c` option**
 
   The `-c` option allows grep to search, count the lines containing the matching string, and then just return the number of counts.
-  For examples: 
- 1. `grep -c "government" find-results.txt`
+  For examples:
+
+  1. `grep -c "government" find-results.txt`
 
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/724c7430-7b39-450f-8eff-fd359c85e5b8)
-  
- 2. `grep -c "Gen_Account_Office" find-results.txt`
+
+  2. `grep -c "Gen_Account_Office" find-results.txt`
  
   ![image](https://github.com/maynhile13105/Lab_Report_3/assets/146885739/26d5a9ec-b913-4d38-a374-80e73daa2c16)
 
