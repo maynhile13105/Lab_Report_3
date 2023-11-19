@@ -2,7 +2,7 @@
 **Step 4: Log into *ieng6***
 
 
-**Step 5: Clone the fork of the repository from the Github account using <mark>ssh<mark>***
+**Step 5: Clone the fork of the repository from the Github account using <mark>ssh</mark>***
 
 
 **Step 6: Log into *ieng6***
