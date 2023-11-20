@@ -90,9 +90,9 @@ Key pressed: `<Esc` to exit the insert mode and get back to normal mode.
 
 Key pressed: `:wq` to save the changes and go back to the terminal. 
 
-![image](https://github.com/maynhile13105/Lab_Reports/assets/146885739/9c10215d-1e15-4f38-b0a0-ca122a7cad32)
-
 ![image](https://github.com/maynhile13105/Lab_Reports/assets/146885739/5452650d-d7be-4117-af40-19fd3f5fa0f6)
+
+![image](https://github.com/maynhile13105/Lab_Reports/assets/146885739/9af16990-0da0-4bee-8bfa-368cf8d4954b)
 
 Key pressed: `git push`
 
