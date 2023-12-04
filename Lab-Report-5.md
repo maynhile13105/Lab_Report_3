@@ -37,7 +37,7 @@ The failure-inducing input:
 
 ![image](https://github.com/maynhile13105/Lab_Reports/assets/146885739/178a86b8-f13e-4e96-ba6a-0615fbf937ee)
 
-
+Following TA's instructions, I found the bug in my code. Since I was new to using `jdb`, I forgot to use it while trying to figure out how to solve this issue. `jdb` really worked in my case. Instead of reading the code and running it manually to see where the code has bugs, `jdb` helped me stop where I wanted to during the bugging process and then run it step by step. In each steps, I can control the values of index1 and index2 variables by printing their values. This made me realize that index2 had not changed throughout the loop. But the condition for the loop to end is that index2 is greater than or equal to the size of list2. This means my code will never stop because my index2 is constant so index2=1 is always smaller than the size of list2.
 
 - ***all the information needed***
 
@@ -144,58 +144,18 @@ The full command line (or lines) you ran to trigger the bug:
 
 The content of files after fixing the bugs:
 
-**ListExamples.java**
+In the file **ListExamples.java**, start at line 42:
 
 ```
-import java.util.ArrayList;
-import java.util.List;
-
-interface StringChecker { boolean checkString(String s); }
-
-class ListExamples {
-
-  // Returns a new list that has all the elements of the input list for which
-  // the StringChecker returns true, and not the elements that return false, in
-  // the same order they appeared in the input list;
-  static List<String> filter(List<String> list, StringChecker sc) {
-    List<String> result = new ArrayList<>();
-    for(String s: list) {
-      if(sc.checkString(s)) {
-        result.add(0, s);
-      }
-    }
-    return result;
-  }
-
-
-  // Takes two sorted list of strings (so "a" appears before "b" and so on),
-  // and return a new list that has all the strings in both list in sorted order.
-  static List<String> merge(List<String> list1, List<String> list2) {
-    List<String> result = new ArrayList<>();
-    int index1 = 0, index2 = 0;
-    while(index1 < list1.size() && index2 < list2.size()) {
-      if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
-        result.add(list1.get(index1));
-        index1 += 1;
-      }
-      else {
-        result.add(list2.get(index2));
-        index2 += 1;
-      }
-    }
-    while(index1 < list1.size()) {
-      result.add(list1.get(index1));
-      index1 += 1;
-    }
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
       index2 += 1;
     }
-    return result;
-  }
 
-
-}
 ```
 
-- 
+Because index2 always is 1, the loop's condition is always true. So the loop never stops. This causes a bug and causes the test to time out. Also `index1 +=1` has no meaning in this loop. But if it's `index2 +=1`, it actually makes sense: Every time a loop occurs, index2 is incremented by 1, until it no longer satisfies the loop's condition, and the loop automatically ends. So in line 43 of file `ListExamples.java`, I changed `index1` to `index2`
+
+### Part 2
+
+I learned a lot of new things like `.sh`, vim,... But the thing that interested me the most was the `jdb` command. Before taking this course, many people suggested to me to use Visual Studio Code. But I didn't use it even though it could minimize my computer's memories. I have always chosen to use IDEs like Visual Studio Community even though they take up a lot of space on my computer because of their convenience, such as the ability to stop at a line that I want and run step by step. But `jdb` helped me do it on Visual Studio Code. JUnit tests also show where bugs appear. So far,  I can use Visual Studio Code easily. Therefore, this course taught me a lot of new knowledge and I really appreciate it.
