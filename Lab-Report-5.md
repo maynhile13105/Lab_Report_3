@@ -154,7 +154,7 @@ In the file **ListExamples.java**, start at line 42:
 
 ```
 
-Because index2 always is 1, the loop's condition is always true. So the loop never stops. This causes a bug and causes the test to time out. Also `index1 +=1` has no meaning in this loop. But if it's `index2 +=1`, it actually makes sense: Every time a loop occurs, index2 is incremented by 1, until it no longer satisfies the loop's condition, and the loop automatically ends. So in line 43 of file `ListExamples.java`, I changed `index1` to `index2`
+Because index2 always is 1, the loop's condition is always true. So the loop never stops. This causes a bug and causes the test to time out. Also `index1 +=1` has no meaning in this loop. But if it's `index2 +=1`, it actually makes sense: Every time a loop occurs, index2 is incremented by 1, until it no longer satisfies the loop's condition, and the loop automatically ends. So in line 43 of file `ListExamples.java`, I changed `index1` to `index2`.
 
 ### Part 2
 
