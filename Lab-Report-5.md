@@ -39,7 +39,7 @@ The failure-inducing input:
 
 Following TA's instructions, I found the bug in my code. Since I was new to using `jdb`, I forgot to use it while trying to figure out how to solve this issue. `jdb` really worked in my case. Instead of reading the code and running it manually to see where the code has bugs, `jdb` helped me stop where I wanted to during the bugging process and then run it step by step. In each steps, I can control the values of index1 and index2 variables by printing their values. This made me realize that index2 had not changed throughout the loop. But the condition for the loop to end is that index2 is greater than or equal to the size of list2. This means my code will never stop because my index2 is constant so index2=1 is always smaller than the size of list2.
 
-- ***all the information needed***
+- ***All the information needed***
 
 The file & directory structure needed:
 
