@@ -5,3 +5,4 @@ WELCOME TO MY LAB REPORT 3!
 
 [Lab Report 4](https://maynhile13105.github.io/Lab_Reports/Lab-Report-4)
 
+[Lab Report 5](https://maynhile13105.github.io/Lab_Reports/Lab-Report-5)
