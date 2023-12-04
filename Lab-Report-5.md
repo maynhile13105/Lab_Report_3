@@ -27,7 +27,7 @@ The failure-inducing input:
   You are right. Using JUnit testing to identify the location of bugs is important. It helps us minimize the time it takes to fix bugs. With this time-out issue, I recommend you check your logic. You can use `jdb` to debug and stop at the desired position as the professor mentioned in the course. You can use `step` to run to the next line.
 
 
-- Student's implementation
+- ***Student's implementation***
 
  ![image](https://github.com/maynhile13105/Lab_Reports/assets/146885739/c7bb6fb0-e862-497e-80f7-d5472a9d6ace)
 
@@ -39,10 +39,21 @@ The failure-inducing input:
 
 
 
-
 - ***all the information needed***
 
+The file & directory structure needed:
+
+![image](https://github.com/maynhile13105/Lab_Reports/assets/146885739/44486573-d819-42c1-937b-00f43713438f)
+
+
 The contents of each file before fixing the bug:
+
+**test.sh**
+
+```
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+```
 
 **ListExamples.java**
 
@@ -125,7 +136,13 @@ public class ListExamplesTests {
 }
 ```
 
-The content of files after fixing the bugs
+The full command line (or lines) you ran to trigger the bug:
+
+	```
+	bash test.sh
+	```
+
+The content of files after fixing the bugs:
 
 **ListExamples.java**
 
