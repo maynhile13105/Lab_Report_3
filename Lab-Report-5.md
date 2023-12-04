@@ -10,6 +10,17 @@ Hi instructors,
 
 While I was trying to run the JUnit tests, I encountered an issue. Based on my understanding from the messages, something in line 42 of the ListExamples.java file caused my test to time out after 500 milliseconds. But what happened there? I tried to figure the bug out but could not. Can you help me with what is happening?
 
+The failure-inducing input:
+
+```
+@Test(timeout = 500)
+        public void testMerge2() {
+		        List<String> l1 = new ArrayList<String>(Arrays.asList("a", "b", "c"));
+		        List<String> l2 = new ArrayList<String>(Arrays.asList("c", "d", "e"));
+		        assertArrayEquals(new String[]{ "a", "b", "c", "c", "d", "e" }, ListExamples.merge(l1, l2).toArray());
+         }
+```
+
 - ***The response from a TA***
 
   
